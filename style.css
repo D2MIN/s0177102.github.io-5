@@ -13,6 +13,7 @@ a {
 }
 
 header {
+  border-bottom: 2px solid black;
   display: flex;
   justify-content: center;
 }
@@ -29,44 +30,65 @@ header .nuv .links a {
   margin: 20px;
 }
 header .nuv .links a:hover {
-  color: crimson;
+  color: rgb(96, 74, 235);
 }
 
 main {
   background-color: rgba(151, 243, 247, 0.301);
+  border-bottom: 2px solid black;
   display: flex;
   justify-content: center;
 }
 main .main_section {
   display: flex;
-}
-main .main_section .form .form_section {
-  margin-top: 200px;
+  justify-content: space-between;
 }
 main .main_section .form .form_section form {
-  width: 200px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
 }
-main .main_section .form .form_section form input, main .main_section .form .form_section form select {
+main .main_section .form .form_section form .cell_text {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  color: darkslateblue;
+}
+main .main_section .form .form_section form input, main .main_section .form .form_section form select, main .main_section .form .form_section form button {
   font-size: 20px;
   padding: 10px;
 }
-main .main_section .form .img_prod {
-  border-radius: 40px;
-  border: 2px solid black;
+main .main_section .form .form_section form .btn {
+  background-color: rgba(172, 255, 47, 0.5);
+  margin-bottom: 5px;
+}
+main .main_section .form .form_section form .btn:hover {
+  background-color: rgba(166, 221, 83, 0.5);
+}
+main .main_section .form .form_section form .clear {
+  background-color: rgba(255, 118, 118, 0.5);
+}
+main .main_section .form .form_section form .clear:hover {
+  background-color: hwb(0 38% 18%/0.5);
 }
 main .main_section .img {
   float: right;
-  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 50px;
 }
 main .main_section .img img {
-  float: right;
-  margin: 40px;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid black;
+  border: 2px solid darkslateblue;
   border-radius: 40px;
+}
+main .main_section .img p {
+  margin: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: darkslateblue;
+  border-bottom: 3px solid darkslateblue;
 }
 
 footer {
@@ -74,4 +96,52 @@ footer {
   display: flex;
   justify-content: center;
   margin: 30px;
+}
+
+@media (min-width: 810px) {
+  form {
+    width: 400px;
+  }
+  .form_section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+  }
+}
+@media (min-width: 533px) {
+  .form_section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 810px) {
+  .img img {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 532px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    margin: 50px;
+    margin-bottom: 0px;
+  }
+  .main_section {
+    flex-direction: column-reverse;
+  }
+  .form_section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 321px) {
+  .main_section {
+    width: 320px;
+  }
 }/*# sourceMappingURL=style.css.map */

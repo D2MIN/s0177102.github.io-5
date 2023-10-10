@@ -12,6 +12,7 @@ a{
 }
 
 header{
+    border-bottom: 2px solid black;
     display: flex;
     justify-content: center;
     .nuv{
@@ -26,7 +27,7 @@ header{
             a{
                 margin: 20px;
                 &:hover{
-                    color: crimson;
+                    color: rgb(96, 74, 235);
                 }
             }
         }
@@ -34,38 +35,62 @@ header{
 }
 main{
     background-color: rgba(151, 243, 247, 0.301);
+    border-bottom: 2px solid black;
     display: flex;
     justify-content: center;
     .main_section{
         display: flex;
+        justify-content: space-between;
         .form{
             .form_section{
-                margin-top: 200px;
+                
                 form{
-                    width: 200px;
+                    max-width: 400px;
                     display: flex;
                     flex-direction: column;
-                    input, select{
+                    .cell_text{
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 20px;
+                        color: darkslateblue;
+                    }
+                    input, select, button{
                         font-size: 20px;
                         padding: 10px;
                     }
+                    .btn{
+                        background-color: rgba(172, 255, 47, 0.5);
+                        margin-bottom: 5px;
+                        &:hover{
+                            background-color: rgba(166, 221, 83, 0.5);
+                        }
+                    }
+                    .clear{
+                        background-color:rgba(255, 118, 118, 0.5);
+                        &:hover{
+                            background-color: hwb(0 38% 18% / 0.5);
+                        }
+                    }
                 }
-            }
-            .img_prod{
-                border-radius: 40px;
-                border: 2px solid black;
             }
         }
         .img{
             float: right;
-            width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 50px;
             img{
-                float: right;
-                margin: 40px;
-                padding: 20px;
-                background-color: rgb(255, 255, 255);
-                border: 2px solid black;
+                border: 2px solid darkslateblue;
                 border-radius: 40px;
+            }
+            p{
+                margin: 30px;
+                font-size: 30px;
+                font-weight: bold;
+                color:darkslateblue;
+                border-bottom: 3px solid darkslateblue;
             }
         }
     }
@@ -75,4 +100,60 @@ footer{
     display: flex;
     justify-content: center;
     margin: 30px;
+}
+
+@media(min-width:810px){
+    form{
+        width: 400px;
+    }
+    .form_section{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 50px;
+    }
+}
+
+@media(min-width:533px){
+    .form_section{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 50px;
+    }
+}
+
+@media(max-width:810px){
+    .img{
+        img{
+            width: 220px;
+            height: 220px;
+        }
+    }
+}
+
+@media(max-width:532px){
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        margin: 50px;
+        margin-bottom: 0px;
+    }
+
+    .main_section{
+        flex-direction: column-reverse;
+    }
+
+    .form_section{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:321px){
+    .main_section{
+        width: 320px;
+    }
 }

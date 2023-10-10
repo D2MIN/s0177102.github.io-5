@@ -14,7 +14,7 @@
         <div class="size_section">
             <div class="nuv">
                 <div class="name">
-                    <h2>Frute shope</h2>
+                    <h2>fruit store</h2>
                 </div>
                 <div class="links">
                     <a href="">О нас</a>
@@ -31,9 +31,12 @@
                 <div class="form">
                     <div class="form_section">
                         <form>
+                            <h2 id="cell_text" class="cell_text">Цена : 0 Руб.</h2>
+                            <br>
                             <input type="text" placeholder="Укажите количество" required id="inp_coll">
+                            <br>
                             <h2>Выберите продукт:</h2>
-                            <select name="select" required id="select_prod">
+                            <select name="select" id="select_prod">
                                 <option value="Банан">Банан</option>
                                 <option value="Клубника">Клубника</option>
                                 <option value="Вишня">Вишня</option>
@@ -44,28 +47,24 @@
                                 <option value="Лимон">Лимон</option>
                             </select>
                             <br>
-                            <input class="btn" type="submit" value="Заказать" required id="btn_sub">
+                            <button id="add" class="btn">Добавить</button>
+                            <button id="clear" class="clear">Очистить</button>
                             <br>
-                            <img src="" alt="" width="200px" id="img_prod" class="img_prod">
+                            <input class="btn_input" type="submit" value="Заказать" required id="btn_sub">
+                            <br>
                         </form>
                     </div>
                 </div>
                 <div class="img">
-                    <a href=""><img src="img/banan.jpg" alt="banan" width="200px" height="200px" id="ban"></a>
-                    <a href=""><img src="img/clubnika.jpg" alt="" width="200px" height="200px" id="club"></a>
-                    <a href=""><img src="img/vishnya.jpg" alt="" width="200px" height="200px" id="vish"></a>
-                    <a href=""><img src="img/apelsun.jpg" alt="" width="200px" height="200px" id="apel"></a>
-                    <a href=""><img src="img/ananas.jpg" alt="" width="200px" height="200px" id="anan"></a>
-                    <a href=""><img src="img/yabloki.jpg" alt="" width="200px" height="200px" id="yabl"></a>
-                    <a href=""><img src="img/inograd.jpg" alt="" width="200px" height="200px" id="vin"></a>
-                    <a href=""><img src="img/limone.jpg" alt="" width="200px" height="200px" id="limon"></a>
+                    <img src="img/banan.jpg" alt="" height="300px" width="300px" id="img_prod" class="img_prod">
+                    <p id="text_cell">25 рублей</p>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <h2>Frute shope</h2>
+        <h2>fruit store</h2>
     </footer>
 </body>
 </html>
