@@ -7,7 +7,7 @@ var cell_text = document.getElementById("cell_text");
 
 var add = document.getElementById("add");
 var clear = document.getElementById("clear");
-let xcell = 25;
+let xcell = 49;
 var sum = 0;
 
 prod.addEventListener("change", function() {
