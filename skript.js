@@ -16,34 +16,42 @@ prod.addEventListener("change", function() {
         img.src = "img/banan.jpg";
         cell.textContent = "49 рублей";
         xcell = 49;
+        inp_coll.value = "";
     }else if(product === "Клубника"){
         img.src = "img/clubnika.jpg";
         cell.textContent = "28 рублей";
         xcell = 28;
+        inp_coll.value = "";
     }else if(product === "Вишня"){
         img.src = "img/vishnya.jpg";
         cell.textContent = "32 рублей";
         xcell = 32;
+        inp_coll.value = "";
     }else if(product === "Апельсин"){
         img.src = "img/apelsun.jpg";
         cell.textContent = "27 рублей";
         xcell = 27;
+        inp_coll.value = "";
     }else if(product === "Ананас"){
         img.src = "img/ananas.jpg";
         cell.textContent = "60 рублей";
         xcell = 60;
+        inp_coll.value = "";
     }else if(product === "Яблоки"){
         img.src = "img/yabloki.jpg";
         cell.textContent = "44 рублей";
         xcell = 44;
+        inp_coll.value = "";
     }else if(product === "Виноград"){
         img.src = "img/inograd.jpg";
         cell.textContent = "40 рублей";
         xcell = 40;
+        inp_coll.value = "";
     }else if(product === "Лимон"){
         img.src = "img/limone.jpg";
         cell.textContent = "10 рублей";
         xcell = 10;
+        inp_coll.value = "";
     }
 });
 
@@ -59,6 +67,7 @@ add.addEventListener("click",function(event){
     }
     cell_text.textContent = "Цена : " + sum +" Руб.";
     event.preventDefault();
+    inp_coll.value = "";
 })
 
 clear.addEventListener("click",function(event){

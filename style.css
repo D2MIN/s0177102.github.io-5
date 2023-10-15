@@ -34,7 +34,7 @@ header .nuv .links a:hover {
 }
 
 main {
-  background-color: rgba(151, 243, 247, 0.301);
+  background-color: hsla(183, 86%, 78%, 0.301);
   border-bottom: 2px solid black;
   display: flex;
   justify-content: center;
@@ -80,7 +80,8 @@ main .main_section .img {
   margin-right: 50px;
 }
 main .main_section .img img {
-  border: 2px solid darkslateblue;
+  border: 3px solid #604aeb;
+  border-bottom: 10px groove #604aeb;
   border-radius: 40px;
 }
 main .main_section .img p {

@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(183, 86%, 78%, 0.301);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.left {
+  margin-right: 80px;
+}
+
+.right {
+  margin-left: 80px;
+}
+
+.main_section {
+  height: 710px;
+}
+
+.body_section {
+  width: 900px;
+}
+
+.name_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name_div h1 {
+  border-bottom: 3px solid #604aeb;
+}
+
+.img_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_div img {
+  border-radius: 20%;
+  height: 300px;
+  width: 350px;
+  border: 3px solid #604aeb;
+  border-bottom: 10px groove #604aeb;
+}
+
+.description_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+.description_div p {
+  background-color: white;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+button {
+  border: none;
+  background-color: hsla(183, 86%, 78%, 0);
+}
+
+.return {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.return a {
+  border: 2px solid #604aeb;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.return a:hover {
+  color: #604aeb;
+}/*# sourceMappingURL=style.tytle2.css.map */
